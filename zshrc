@@ -6,7 +6,13 @@ alias python='python3'
 alias py='python3'
 
 # ls Alias
-alias ls='ls -G'
+if [[ $OSTYPE == 'linux'* ]]; then
+  alias ls='ls --color'
+fi
+
+if [[ $OSTYPE == 'darwin'* ]]; then
+  alias ls='ls -G'
+fi
 
 # Prompt customization
 # checkout https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html#Prompt-Expansion
