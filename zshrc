@@ -20,9 +20,11 @@ alias ls='ls -G'
 # 3 for the number of parent dirs to show
 # alternatively use %d or %/ for full paths
 # \U0000 for unicode
+# %(?.if_reu\turn_code_istrue.if_reuturn_code_isfalse)
+# Next we have colorized the output for each case (true/false)
 
-export PROMPT=$'%F{green}%B%n@%m%b%f %F{111}%3~%f \U279c '
-#export PROMPT=$'%F{green}%B%n@%m%b%f %F{blue}%3~%f '
+export PROMPT=$'%F{green}%B%n@%m%b%f %F{111}%3~%f %(?.%F{green}\U279c%f.%F{red}\U279c%f) '
+#export PROMPT=$'%F{green}%B%n@%m%b%f %F{blue}%3~%f %(?.%F{green}>%f.%F{red}>%f) '
 
 # ---
 
