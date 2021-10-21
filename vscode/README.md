@@ -1,0 +1,1 @@
+Use the amazing colorscheme [tokyo-night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night)
