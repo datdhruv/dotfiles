@@ -1,14 +1,30 @@
 # Colorscheme 
-[GruvBox Material Theme](https://marketplace.visualstudio.com/items?itemName=sainnhe.gruvbox-material)
+
+[Bear Theme](https://marketplace.visualstudio.com/items?itemName=dahong.theme-bear)
+
+[Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme)
 
 [Edge](https://marketplace.visualstudio.com/items?itemName=sainnhe.edge)
 
 [Github Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme)
 
+[GruvBox Material Theme](https://marketplace.visualstudio.com/items?itemName=sainnhe.gruvbox-material)
+
 # Extentions
 [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens) for inline error highlighting.
 
 [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) as a lightweight postman alternative.
+
+# Most Important Settings
+
+```json
+"editor.suggest.preview": true,
+"editor.minimap.autohide": true,
+"editor.cursorBlinking": "phase",
+"editor.wordWrap": "on",
+"window.autoDetectColorScheme": true,
+"editor.suggest.localityBonus": true
+```
 
 # Reseting Pane sizes (of sidebar and terminal)
 
@@ -27,5 +43,30 @@ You can also set this in `settings.json` with `"window.titleBarStyle": "native"`
 #### You can also enable Command Center layout for vscode
 set `"window.commandCenter": true`
 
+#### Layout Control (icons that appear on the top right)
+you can control their visibility using `"workbench.layoutControl.enabled": false`
+
+# Activity and Status Bar
+These can be controlled using 
+
+1. `View > Appearance`
+2. Layout Control
+3. Settings
+```
+"workbench.statusBar.visible": true,
+"workbench.activityBar.visible": true,
+```
+
+# Day/Night theme
+
+`"window.autoDetectColorScheme": true,` enables day/night mode detection
+
+Default themes for the day/night mode can be controlled using:
+
+```json    
+"workbench.preferredDarkColorTheme": "Default Dark+",
+"workbench.preferredLightColorTheme": "Default Light+",
+```
+
 # Python language server
-I use Jedi server
+You can use Jedi server or Pylance. However intellicode only works with pylance
