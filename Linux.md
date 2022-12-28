@@ -12,13 +12,6 @@ Change the monitor color to sRGB
 
 You can set up your own color scheme using the profiles setting. Use that to match whatever is the primary window color of the theme.
 
-# Terminal font
-
-- Meslo Nerd Font
-- FiraCode Nerd Font
-- Meslo
-- Ubuntu/Mono
-
 ## Setting up Desktop Entrys
 ```
 [Desktop Entry]
