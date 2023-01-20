@@ -12,5 +12,6 @@
     "workbench.preferredDarkColorTheme": "Default Dark+",
     "workbench.preferredLightColorTheme": "Default Light+",
     "window.autoDetectColorScheme": true,
-    "editor.suggest.localityBonus": true
+    "editor.suggest.localityBonus": true,
+    "editor.guides.bracketPairs": "active"
 }
