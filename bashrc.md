@@ -1,8 +1,12 @@
 ## Bash Prompt
 
 ```bash
-PS1='\[\e[0;38;5;75m\]\w \[\e[0;38;5;134m\]$(git branch 2>/dev/null | grep '"'"'^*'"'"') \[\e[0;38;5;43m\]\$\[\e[0m\]'
+PS1='\[\e[0;1;38;5;111m\]\w \[\e[0;38;5;171m\]$(git branch 2>/dev/null | grep '"'"'^*'"'"') \[\e[0;38;5;40m\]\$ \[\e[0m\]'
 ```
+
+- Directory from `home`
+- Branch
+- `$` prompt
 
 ## Case insensitive autocompletion
 In order to make bash case-insensitive for to current user:
