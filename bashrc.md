@@ -1,11 +1,17 @@
 ## Bash Prompt
 
 ```bash
-PS1='\[\e[0;1;38;5;111m\]\w \[\e[0;38;5;171m\]$(git branch 2>/dev/null | grep '"'"'^*'"'"') \[\e[0;38;5;40m\]\$ \[\e[0m\]'
+PS1=$'\[\e[0;1;38;5;111m\]\w \[\e[$(($?==0?92:91))m\]$ \[\e[0m\]'
+```
+
+or with a right arrow for supported nerd fonts:
+
+```bash
+PS1=$'\[\e[0;1;38;5;111m\]\w \[\e[$(($?==0?92:91))m\]\u279c \[\e[0m\]'
 ```
 
 - Directory from `home`
-- Branch
+- uses a if-else ternary expression $(($?==0?92:91)) that makes the color code 0;91m (red, see color codes) if the last command exits with non-zero, or 0;92m green otherwise.
 - `$` prompt
 
 ## Case insensitive autocompletion
