@@ -1,3 +1,10 @@
+# Small script to set things up on windows
+
+# Remove "Search the web" functionality in the windows search bar. 
+# Run with admin access.
+reg add HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer /v DisableSearchBoxSuggestions /t REG_DWORD /d 1
+
+# Install applications
 param ($installTypes='base')
 
 # Check out the package manager "Winget" By Microsoft
