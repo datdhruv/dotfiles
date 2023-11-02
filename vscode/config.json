@@ -8,6 +8,7 @@
     "files.autoSave": "afterDelay",
     "git.autofetch": true,
     "breadcrumbs.enabled": false,
+    "workbench.activityBar.location": "top",
     "telemetry.telemetryLevel": "off",
     "workbench.preferredDarkColorTheme": "Default Dark+",
     "workbench.preferredLightColorTheme": "Default Light+",
