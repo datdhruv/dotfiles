@@ -22,6 +22,7 @@
 "editor.minimap.autohide": true,
 "editor.cursorBlinking": "phase",
 "editor.wordWrap": "on",
+"workbench.activityBar.location": "top",
 "window.autoDetectColorScheme": true,
 "editor.suggest.localityBonus": true
 ```
@@ -52,10 +53,15 @@ These can be controlled using
 1. `View > Appearance`
 2. Layout Control
 3. Settings
+
+From Version 1.84, you can also move [Activity bar to the top](https://code.visualstudio.com/updates/v1_84#_customize-activity-bar-position)
+
 ```
 "workbench.statusBar.visible": true,
 "workbench.activityBar.visible": true,
+"workbench.activityBar.location": "top"
 ```
+
 
 # Day/Night theme
 
