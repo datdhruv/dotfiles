@@ -10,9 +10,9 @@
     "breadcrumbs.enabled": false,
     "workbench.activityBar.location": "top",
     "telemetry.telemetryLevel": "off",
-    "workbench.preferredDarkColorTheme": "Default Dark+",
-    "workbench.preferredLightColorTheme": "Default Light+",
+    "window.commandCenter": false,
     "window.autoDetectColorScheme": true,
     "editor.suggest.localityBonus": true,
-    "editor.guides.bracketPairs": "active"
+    "editor.guides.bracketPairs": "active",
+    "git.blame.editorDecoration.enabled": true
 }

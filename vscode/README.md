@@ -10,6 +10,12 @@
 
 [GruvBox Material Theme](https://marketplace.visualstudio.com/items?itemName=sainnhe.gruvbox-material)
 
+# Font
+[Jetbrains Nerd font Medium](https://www.nerdfonts.com/font-downloads)
+```
+"editor.fontFamily": "JetBrainsMono NF Medium",
+```
+
 # Extentions
 [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens) for inline error highlighting.
 
@@ -62,6 +68,19 @@ From Version 1.84, you can also move [Activity bar to the top](https://code.visu
 "workbench.activityBar.location": "top"
 ```
 
+# Git Blame info 
+Introduced with [`v1.96`](https://code.visualstudio.com/updates/v1_96#_source-control)
+
+```
+"git.blame.editorDecoration.enabled": true,
+```
+
+Optionally also:
+
+```
+"git.blame.statusBarItem.enabled": true,
+"git.blame.editorDecoration.template": "${subject}, ${authorName} (${authorDateAgo})"
+```
 
 # Day/Night theme
 
@@ -72,6 +91,13 @@ Default themes for the day/night mode can be controlled using:
 ```json    
 "workbench.preferredDarkColorTheme": "Default Dark+",
 "workbench.preferredLightColorTheme": "Default Light+",
+```
+
+# Copilot-WSL httpProxy settings
+For Copilot to run under WSL, you need to disable `http.proxySupport`:
+
+```
+"http.proxySupport": "off"
 ```
 
 # Python language server
